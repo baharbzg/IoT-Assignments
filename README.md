@@ -20,4 +20,6 @@ Two different analog data containing temperature and light density collect by Nu
 For the connected components at IoT device level, we have a STM32-Nucleo F401RE connected to sensors and actuators. The data publish to a local MQTT-SN protocol by RIOT which is a development OS for the board. As the AWS IoT Core does not support the MQTT-SN, we use a bridge, which connect the MQTT-SN protocol to MQTT protocol at the cloud level. Finally the data will be reached at AWS Core IoT Level and analyze using AWS Analytics Tool called Kinesis. Now the data is ready to visualize in any web-dashboard can connect to AWS IoT Core.
 
 Overall IoT Architecture :
-Images/Overall IoTArchitecture.jpg
+
+https://github.com/baharbzg/IoT-Assignments/tree/main/Images
+
