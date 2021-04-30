@@ -1,6 +1,6 @@
 # IoT-Assignments
 
-First Assignment Hands-On Tutorial : https://bbarzegar21.medium.com/first-try-fd66034ee7aa
+First Assignment Hands-On Tutorial : https://bbarzegar21.medium.com/iot-first-assignment-1433fe390810
 
 
 1. What is the problem and why do you need IoT?
