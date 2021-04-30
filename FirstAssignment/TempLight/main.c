@@ -16,7 +16,6 @@
 #include "net/gnrc/ipv6.h"
 #include "net/gnrc/netif.h"
 #include "net/gnrc/netif/ipv6.h"
-
 #include "net/emcute.h"
 
 #ifndef EMCUTE_ID
@@ -248,7 +247,7 @@ static int cmd_pub(int argc, char **argv)
         light = adc_util_map(sample_light, ADC_RES, 10, 100);
 
 		
-		 argv[3] = "1"; 
+		argv[3] = "1"; 
 		 
 		// Actuator Activation Based on Sensor Values
 		
@@ -277,7 +276,7 @@ static int cmd_pub(int argc, char **argv)
 			strcpy(light_status, "Light is Low");
 		}
 		// fills the json document		
-		sprintf(json, "{\"id\": \"%d\", \"datetime\": \"%s\", \"tempreture\": %i,\"tempstatus\": %s, \"lightdens\": %i,\"lightstatus\": %s}",
+		sprintf(json, "{\"id\": \"%d\", \"datetime\": \"%s\", \"temperature\": %i,\"temp_status\": \"%s\",\"lightdens\": %i,\"light_status\": \"%s\"}",
                   atoi(argv[3]), todayDateStr, temp,temp_status, light,light_status);                  
       argv[2] = json;  
 	  /* step 2: publish data */
@@ -417,7 +416,7 @@ int main(void)
     
 /* Aggiunta temporanea*/
 
-netif_add("4","2001:0db8:0:f101::5");
+    netif_add("4","2001:0db8:0:f101::5");
 
 /*aggiunta temporanea fine*/
 
